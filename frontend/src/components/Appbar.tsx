@@ -1,7 +1,9 @@
+import { useUser } from "../hooks";
 import { Avatar } from "./BlogCard"
 import { Link } from "react-router-dom"
 
 export const Appbar = () => {
+    const { loading, user, posts, error } = useUser();
     return <div className="border-b flex justify-between px-10 py-4">
         <Link to={'/blogs'} className="flex flex-col justify-center cursor-pointer">
                 Medium
@@ -16,7 +18,7 @@ export const Appbar = () => {
           </button>
         </Link>
             <Link to={`/user`}>
-            <Avatar size={"big"} name="Nikhil" />
+            <Avatar size={"big"} name={user?.name || "Nikhil"} />
             </Link>
         </div>
     </div>
