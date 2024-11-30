@@ -45,6 +45,6 @@ This project is a **Medium-like blog application** built using **React** for the
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/medium-like-app.git
-   cd medium-like-app
+   git clone https://github.com/your-username/medium-project.git
+   cd medium-project
 
