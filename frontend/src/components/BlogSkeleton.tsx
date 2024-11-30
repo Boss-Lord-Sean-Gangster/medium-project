@@ -1,29 +1,33 @@
-import { Circle } from "./BlogCard"
-
 export const BlogSkeleton = () => {
-    return <div role="status" className="animate-pulse">
+    return (
+      <div role="status" className="animate-pulse">
         <div className="p-4 border-b border-slate-200 pb-4 w-screen max-w-screen-md cursor-pointer">
-            <div className="flex">
-                <div className="h-4  bg-gray-200 rounded-full w-48 mb-4"></div>
-                <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
-                <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
-                <div className="flex justify-center flex-col pl-2 ">
-                    <Circle />
-                </div>
-                <div className="pl-2 font-thin text-slate-500 text-sm flex justify-center flex-col">
-                    <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
-                </div>
+          {/* Header and Sort Button */}
+          <div className="flex justify-between items-center mb-4">
+            <div className="h-2 bg-gray-200 rounded-full w-48 mb-4"></div>
+            <div className="w-24 h-8 bg-gray-200 rounded-lg mb-4"></div>
+          </div>
+  
+          {/* Main Content (Blog) */}
+          <div className="grid grid-cols-12 gap-4">
+            {/* Main blog section (10 columns) */}
+            <div className="flex flex-col justify-center mt-8 col-span-10">
+              <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
+              <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
+              <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
+              <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
             </div>
-            <div className="text-xl font-semibold pt-2">
-                <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
+  
+            {/* Sidebar section (2 columns) */}
+            <div className="col-span-2">
+              <div className="h-2 bg-gray-200 rounded-full mb-4"></div>
+              <div className="h-2 bg-gray-200 rounded-full mb-4"></div>
+              <div className="h-2 bg-gray-200 rounded-full mb-4"></div>
             </div>
-            <div className="text-md font-thin">
-                <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
-            </div>
-            <div className="text-slate-500 text-sm font-thin pt-4">
-                <div className="h-2 bg-gray-200 rounded-full mb-2.5"></div>
-            </div>
+          </div>
         </div>
-    <span className="sr-only">Loading...</span>
-</div>
-}
+        <span className="sr-only">Loading...</span>
+      </div>
+    );
+  };
+  
