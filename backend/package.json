@@ -8,12 +8,18 @@
     "@niks-sharma/medium-project-common": "^1.0.0",
     "@prisma/client": "^5.22.0",
     "@prisma/extension-accelerate": "^1.2.1",
+    "@types/dotenv": "^8.2.3",
+    "busboy": "^1.6.0",
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.7",
+    "formidable": "^3.5.2",
     "hono": "^4.6.11",
     "prisma": "^5.22.0",
     "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/formidable": "^3.4.5",
     "wrangler": "^3.88.0"
   }
 }
